@@ -3,7 +3,7 @@ import { useUser } from "../userContext";
 import { useTheme } from "../themeContext"; // Import ThemeContext
 import { FaSun, FaMoon, FaPowerOff } from "react-icons/fa";
 import logo from "../assets/logo.png"; // Light mode logo
-import logoDark from "../assets/LogoDark.png"; // Dark mode logo
+import logoDark from "../assets/logoDark.png"; // Dark mode logo
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
