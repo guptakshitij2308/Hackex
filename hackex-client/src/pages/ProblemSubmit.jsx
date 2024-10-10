@@ -36,7 +36,7 @@ const AddProblem = () => {
       // if (outputFile) formData.append("outputFile", outputFile);
 
       const response = await fetch(
-        "http://localhost:3000/api/v1/problems/addProblem",
+        "https://hackex.onrender.com/api/v1/problems/addProblem",
         {
           method: "POST",
           // body: formData,

@@ -22,7 +22,7 @@ const CreateContest = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "http://localhost:3000/api/v1/problems/allProblems"
+          "https://hackex.onrender.com/api/v1/problems/allProblems"
         );
         const data = await response.json();
         if (data.problems && data.problems.length === 0) {
@@ -62,7 +62,7 @@ const CreateContest = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/contests/createContest",
+        "https://hackex.onrender.com/api/v1/contests/createContest",
         {
           method: "POST",
           headers: {

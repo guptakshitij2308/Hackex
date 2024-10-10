@@ -34,9 +34,12 @@ const Navbar = () => {
   }, []);
 
   const handleLogout = async () => {
-    const response = await fetch("http://localhost:3000/api/v1/users/logout", {
-      method: "GET",
-    });
+    const response = await fetch(
+      "https://hackex.onrender.com/api/v1/users/logout",
+      {
+        method: "GET",
+      }
+    );
     if (response.ok) {
       await logout();
       navigate("/");

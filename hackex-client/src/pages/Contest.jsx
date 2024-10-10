@@ -13,7 +13,7 @@ const Contest = () => {
     const fetchContest = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/v1/contests/${id}/problems`
+          `https://hackex.onrender.com/api/v1/contests/${id}/problems`
         );
         if (response.ok) {
           const data = await response.json();

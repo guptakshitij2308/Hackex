@@ -61,7 +61,7 @@ const ProblemDetail = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          `http://localhost:3000/api/v1/problems/getProblem/${id}`
+          `https://hackex.onrender.com/api/v1/problems/getProblem/${id}`
         );
 
         if (response.ok) {
@@ -168,7 +168,7 @@ const ProblemDetail = () => {
           normalizeOutput(problem.sampleOutput)
         ) {
           const submitResponse = await fetch(
-            "http://localhost:3000/api/v1/users/submitCode",
+            "https://hackex.onrender.com/api/v1/users/submitCode",
             {
               method: "POST",
               headers: {

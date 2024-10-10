@@ -14,7 +14,7 @@ const Signup = () => {
   const handleSignup = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/users/signup",
+        "https://hackex.onrender.com/api/v1/users/signup",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

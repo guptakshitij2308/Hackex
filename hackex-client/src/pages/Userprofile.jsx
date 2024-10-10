@@ -32,7 +32,7 @@ const Profile = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          `http://localhost:3000/api/v1/problems/allProblems`
+          `https://hackex.onrender.com/api/v1/problems/allProblems`
         );
         const tot = await res.json();
         console.log(tot);
@@ -40,7 +40,7 @@ const Profile = () => {
         console.log(totalProblems);
 
         const response = await fetch(
-          `http://localhost:3000/api/v1/users/userProblems`,
+          `https://hackex.onrender.com/api/v1/users/userProblems`,
           {
             method: "POST",
             headers: {
@@ -62,7 +62,7 @@ const Profile = () => {
           const fetchedProblems = await Promise.all(
             data.problems.map(async (problemId) => {
               const problemResponse = await fetch(
-                `http://localhost:3000/api/v1/problems/getProblem/${problemId}`
+                `https://hackex.onrender.com/api/v1/problems/getProblem/${problemId}`
               );
               const problemData = await problemResponse.json();
               return problemData.problem;

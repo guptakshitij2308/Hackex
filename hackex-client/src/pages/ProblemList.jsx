@@ -13,7 +13,7 @@ const ProblemList = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          "http://localhost:3000/api/v1/problems/allProblems"
+          "https://hackex.onrender.com/api/v1/problems/allProblems"
         );
         const data = await response.json();
         console.log(data); // Log data to check its structure
