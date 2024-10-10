@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTheme } from "../themeContext"; // Adjust path as needed
-import Spinner from "../Components/Spinner";
+import Spinner from "../components/Spinner";
 
 const ProblemList = () => {
   const [problems, setProblems] = useState([]);

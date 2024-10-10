@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faCopy, faDownload } from "@fortawesome/free-solid-svg-icons";
 import { saveAs } from "file-saver";
 import { useTheme } from "../themeContext";
-import Spinner from "../Components/Spinner.jsx";
+import Spinner from "../components/Spinner.jsx";
 
 const boilerplateCode = {
   cpp: "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Write your code here\n    return 0;\n}",
