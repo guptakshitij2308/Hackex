@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../themeContext"; // Import ThemeContext
-import Spinner from "../components/Spinner";
+import Spinner from "../Components/Spinner";
 
 const CreateContest = () => {
   const [title, setTitle] = useState("");

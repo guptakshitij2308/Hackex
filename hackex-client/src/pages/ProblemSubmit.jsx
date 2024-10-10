@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../themeContext"; // Import ThemeContext
-import Spinner from "../components/Spinner";
+import Spinner from "../Components/Spinner";
 // import { saveAs } from "file-saver";
 // import { FaDownload, FaUpload } from "react-icons/fa";
 

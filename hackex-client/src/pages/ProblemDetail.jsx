@@ -4,7 +4,7 @@ import { useUser } from "../userContext";
 import { ToastContainer, toast } from "react-toastify";
 import { FaCopy, FaDownload, FaPlay, FaPaperPlane } from "react-icons/fa";
 import { saveAs } from "file-saver"; // Import file-saver for downloading files
-import Spinner from "../components/Spinner.jsx";
+import Spinner from "../Components/Spinner.jsx";
 import CodeHighlighter from "./CodeHighlighter.jsx";
 import useScreenSize from "../hooks/useScreenSize.js";
 import { useTheme } from "../themeContext"; // Import ThemeContext

@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useTheme } from "../themeContext";
 import image from "../assets/image_dummy.png";
 import Modal from "./ProfileModal";
-import Spinner from "../components/Spinner";
+import Spinner from "../Components/Spinner";
 import PieChartComponent from "./PieChart"; // Import the PieChartComponent
 
 const Profile = () => {
@@ -31,7 +31,9 @@ const Profile = () => {
     const fetchUserData = async () => {
       try {
         setLoading(true);
-        const res = await fetch(`http://localhost:3000/api/v1/problems/allProblems`);
+        const res = await fetch(
+          `http://localhost:3000/api/v1/problems/allProblems`
+        );
         const tot = await res.json();
         console.log(tot);
         setTotalProblems(tot.results);

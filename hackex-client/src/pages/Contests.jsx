@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTheme } from "../themeContext"; // Import ThemeContext
-import Spinner from "../components/Spinner";
+import Spinner from "../Components/Spinner";
 import { FaPlusCircle } from "react-icons/fa";
 import { truncateString } from "../utils/helpers";
 
