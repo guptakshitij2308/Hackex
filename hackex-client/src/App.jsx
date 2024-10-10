@@ -7,7 +7,7 @@ import ProblemSubmit from "./pages/ProblemSubmit";
 import Login from "./pages/Login";
 // import UserProfile from "./pages/Userprofile";
 import Signup from "./pages/Signup";
-import Navbar from "./components/Navbar.jsx";
+// import Navbar from "./components/Navbar.jsx";
 // import LeaderBoard from "./pages/LeaderBoard";
 import Contest from "./pages/Contest";
 import Contests from "./pages/Contests";
