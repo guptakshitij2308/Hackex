@@ -7,14 +7,14 @@ import ProblemSubmit from "./pages/ProblemSubmit";
 import Login from "./pages/Login";
 // import UserProfile from "./pages/Userprofile";
 import Signup from "./pages/Signup";
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "./Components/Navbar";
 // import LeaderBoard from "./pages/LeaderBoard";
 import Contest from "./pages/Contest";
 import Contests from "./pages/Contests";
 import CreateContest from "./pages/CreateContest";
 import { Navigate } from "react-router-dom";
 import Home from "./pages/Home";
-import Footer from "./components/Footer.jsx";
+import Footer from "./Components/Footer.jsx";
 import Profile from "./pages/Userprofile";
 
 const App = () => {
