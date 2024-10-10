@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useTheme } from "../themeContext"; // Import ThemeContext
-import Spinner from "../components/Spinner";
+import Spinner from "../Components/Spinner";
 
 const LeaderBoard = () => {
   const [leaderboardData, setLeaderboardData] = useState([]);

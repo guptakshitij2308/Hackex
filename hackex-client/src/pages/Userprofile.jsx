@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useTheme } from "../themeContext";
 import image from "../assets/image_dummy.png";
 import Modal from "./ProfileModal";
-import Spinner from "../components/Spinner";
+import Spinner from "../Components/Spinner";
 import PieChartComponent from "./PieChart"; // Import the PieChartComponent
 
 const Profile = () => {
