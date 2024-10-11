@@ -38,17 +38,20 @@ const Playground = () => {
   const handleRunCode = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:8000/execute", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          langName: language,
-          executionCode: input,
-          customInput: testInput,
-        }),
-      });
+      const response = await fetch(
+        "https://hackex-compiler.onrender.com/execute",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            langName: language,
+            executionCode: input,
+            customInput: testInput,
+          }),
+        }
+      );
 
       const result = await response.json();
 

@@ -54,17 +54,20 @@ const ProblemDetail = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/execute", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          langName: selectedLanguage,
-          executionCode: code,
-          customInput: input,
-        }),
-      });
+      const response = await fetch(
+        "hhttps://hackex-compiler.onrender.com/execute",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            langName: selectedLanguage,
+            executionCode: code,
+            customInput: input,
+          }),
+        }
+      );
 
       const result = await response.json();
 
