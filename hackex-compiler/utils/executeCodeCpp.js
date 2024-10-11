@@ -10,9 +10,10 @@ if (!fs.existsSync(outPath)) {
 
 const executeCodeCpp = (filePath, inputPath) => {
   const executionId = path.basename(filePath).split(".")[0];
-  const outName = `${executionId}.exe`;
+  const outName = `${executionId}.out`;
   const outputPath = path.join(outPath, outName);
-  const command = `g++ ${filePath} -o ${outputPath} && cd ${outPath} && .\\${executionId}.exe < ${inputPath}`;
+  // const command = `g++ ${filePath} -o ${outputPath} && cd ${outPath} && ./${executionId}.out < ${inputPath}`;
+  const command = `g++ ${filePath} -o ${outputPath} && cd ${outPath} && ./${outName} < ${inputPath}`;
 
   return new Promise((resolve, reject) => {
     exec(command, (err, stdout, stderr) => {
