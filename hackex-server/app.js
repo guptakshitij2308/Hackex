@@ -22,7 +22,7 @@ app.use(express.json());
 
 const corsOptions = {
   origin: "*", // Your frontend URL
-  credentials: true, // Allow credentials
+  // credentials: true, // Allow credentials
 };
 
 app.use(cors(corsOptions));
